@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>JS Bin</title>
+  <style>
+    header {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 220px;
+      background-color: #4688f1;
+      color: white;
+    }
+    .section1 {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: -7%;
+      bottom: 0;
+      height: 80px;
+      background-color: #366ad3;
+      color: white;
+    }
+    .icon1 {
+      margin-top: 1.0em;
+      margin-left: 1.0em;
+      word-spacing: 1.5em;
+      font-size: 25px;
+    }
+    .icon2 {
+      margin-top: 1.3em;
+      margin-left: 1.2em;
+      word-spacing: 1.01em;
+      font-size: 25px;
+      display: block;
+      
+    }
+    
+    .ellipsis {
+      margin-left: 1.4em;
+      font-size: 25px;
+    }
+    .marker {
+      font-size: 25px;
+      margin-left: 1.2em;
+    }
+    .kaywon {
+      margin-left: 5.5em;
+      margin-top: -5em;
+      border-bottom: 1px solid white;
+      width: 85%;
+      padding-bottom: 1em;
+    }
+    .sinsa {
+      margin-top: 1.2em;
+      margin-left: 5.5em;
+      margin-bottom: 3em;
+      }   
+    .arrow {
+      float: right;
+      margin-top: -2.0em;
+      margin-right: 1em;
+      font-size: 25px;
+    }
+    .bar {
+      font-size: 25px;
+      margin-top: 1em;
+      margin-left: 1em;
+    }
+    .depart {
+      font-size: 20px;
+      margin-left: 1.9em;
+    }
+    .option {
+      float: right;
+      margin-top: 2em;
+      margin-right: 3em;
+    }
+    .taxi {
+      margin-top: 17em;
+      font-size: 21px;
+      margin-left: 1em;
+    }
+    .time409 {
+      font-weight: bold;
+      font-size: 18px;
+      display: inline;
+      margin-left: 1.5em
+      
+    }  
+    .bold {
+      font-weight: bold;
+    }
+    .hr1 {
+      display: inline;
+      margin-left: 30em;
+      font-size: 18px;
+      }
+    .area1 {
+      text-align: center;
+    }
+    .line2 {
+      margin-left: -19.1em;
+      margin-top: 1.5em;
+      word-spacing: 2em;
+      font-size: 18px;
+    }
+    .angle {
+      color: gray;
+    }
+    .blue {
+      display: inline;
+      margin-left: -1.1em;
+      background-color: blue;
+      color: white;
+    }
+    .line3 {
+      font-size: 20px;
+      color: gray;
+      margin-top: 1em;
+      margin-left: -21em;
+    }
+    .line4 {
+      font-size: 20px;
+      color: gray;
+      margin-top: 1em;
+      margin-left: -21.3em;
+    }
+    .every1 {
+      margin-left: 2em;
+    }
+    .area1 {
+      margin-top: -3em;
+    }
+    .area2 {
+      margin-top: -21em;
+    }
+    .green {
+      display: inline;
+      margin-left: -1.1em;
+      background-color: #1fb923;
+      color: white;
+    }
+    .red {
+      display: inline;
+      margin-left: -1.1em;
+      background-color: #cd4719;
+      color: white;
+    }
+    .line5 {
+      margin-left: -9.5em;
+      margin-top: 1.5em;
+      word-spacing: 2em;
+      font-size: 18px;
+    }
+    .line6 {
+      font-size: 20px;
+      color: gray;
+      margin-top: 1em;
+      margin-left: -21em;
+    }
+    .line7 {
+      font-size: 20px;
+      color: gray;
+      margin-top: 1em;
+      margin-left: -21.3em;
+    }
+    .area3 {
+      margin-top: -21em;
+    }
+    .blue2 {
+      display: inline;
+      margin-left: -1.1em;
+      background-color: blue;
+      color: white;
+    }
+    .area4 {
+      margin-top: -21em;
+    }
+    .red2 {
+      display: inline;
+      margin-left: -1.1em;
+      background-color: #ef291d;
+      color: white;
+    }
+    .line8 {
+      margin-left: -10.9em;
+      margin-top: 1.5em;
+      word-spacing: 2em;
+      font-size: 18px;
+    }
+    .line11 {
+      margin-left: -10.9em;
+      margin-top: 1.5em;
+      word-spacing: 2em;
+      font-size: 18px;
+    }
+     .line9 {
+      font-size: 20px;
+      color: gray;
+      margin-top: 1em;
+      margin-left: -21em;
+    }
+    .line10 {
+      font-size: 20px;
+      color: gray;
+      margin-top: 1em;
+      margin-left: -21.3em;
+    }
+    .line12 {
+      font-size: 20px;
+      color: gray;
+      margin-top: 1em;
+      margin-left: -21em;
+    }
+    .line13 {
+      font-size: 20px;
+      color: gray;
+      margin-top: 1em;
+      margin-left: -21.3em;
+    }
+    @media screen and (max-width: 870px){
+      .area1 {
+        text-align: left;
+      }
+      .hr1 {
+        margin-left: 1em; 
+        
+      }
+      .line2 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 2em;
+      font-size: 13px;
+    }
+      .line3 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 0.8em;
+      font-size: 13px;
+    }
+      .line4 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 0.5em;
+      font-size: 13px;
+    }
+      .area2 {
+        text-align: left;
+      }
+      .hr1 {
+        margin-left: 1em; 
+        
+      }
+      .line5 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 2em;
+      font-size: 13px;
+    }
+      .line6 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 0.8em;
+      font-size: 13px;
+    }
+      .line7 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 0.5em;
+      font-size: 13px;
+    }
+      .red {
+        display: none;
+      }
+      .green {
+        display: none;
+      }
+      .red2 {
+        display: none;
+      }
+      .area3 {
+        text-align: left;
+      }
+      .hr1 {
+        margin-left: 1em; 
+        
+      }
+      .line8 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 2em;
+      font-size: 13px;
+    }
+      .line9 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 0.8em;
+      font-size: 13px;
+    }
+      .line10 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 0.5em;
+      font-size: 13px;
+    }
+      .area4 {
+        text-align: left;
+      }
+      .hr1 {
+        margin-left: 1em; 
+        
+      }
+      .line11 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 2em;
+      font-size: 13px;
+    }
+      .line12 {
+      margin-left: 2.1em;
+      margin-top: 1.5em;
+      word-spacing: 0.8em;
+      font-size: 13px;
+    }
+      .kaywon {
+        width: 70%;
+      }
+    }
+    @media screen and (max-width:1220px){
+      .kaywon {
+        width: 75%;
+      }
+    }
+    @media screen and (max-width:700px){
+      .kaywon {
+        width: 68%;
+      }
+    }
+  </style>
+  </head>
+<body>
+<header>
+  <div class="icon1">
+  <i class="fa fa-arrow-left"></i>
+    <i class="fa fa-bus"></i>
+    <i class="fa fa-taxi"></i>
+    <i class="fa fa-user"></i>
+  </div>
+  <div class="icon2">
+    <i class="fa fa-map-marker"></i>
+  </div>
+  <div class="icon3">
+      <i class="ellipsis fa fa-ellipsis-v"></i>
+  </div>
+  <div class="icon4">
+      <i class="marker fa fa-map-marker"></i>
+  </div>
+  <div class="kaywon">
+  계원예술대학교
+  </div>
+  <div class="sinsa">
+  신사동가로수길
+  </div>
+  <div class="arrow">
+    <i class="arrow fa fa-arrows-v"></i>
+  </div>
+  </header>
+  <section class="section1">
+    <i class="bar fa fa-bars"></i>
+    <span class="depart">Depart at 4:09 PM</span>
+    <span class="option">OPTIONS</span>
+    </section>
+    <div class="area1">
+    <i class="taxi fa fa-taxi"></i>
+      <div class="time409">4:09 - 5:35 PM</div>
+      <div class="hr1"><span class="bold">1</span>hr <span class="bold">25</span>min</div>
+      <div class="line2">
+      <i class="user fa fa-user"></i>
+      <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="blue">1-1</span>
+        <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="blue">441</span>
+      </div>
+      <div class="line3">
+        <span>4:25 PM from 계원예술대학교</span>
+      </div>
+      <div class="line4">
+        <i class="user2 fa fa-user"></i>
+        <span>10 min</span>
+        <span class="every1">Every 10 min</span>
+      </div>
+      <br>
+      <hr>
+      <div class="area2">
+    <i class="taxi fa fa-taxi"></i>
+      <div class="time409">4:09 - 5:41 PM</div>
+      <div class="hr1"><span class="bold">1</span>hr <span class="bold">31</span>min</div>
+      <div class="line5">
+      <i class="user fa fa-user"></i>
+      <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="blue">1-1</span>
+        <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="green">4318</span>
+        <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="red">9404</span>
+      </div>
+      <div class="line6">
+        <span>4:25 PM from 계원예술대학교</span>
+      </div>
+      <div class="line7">
+        <i class="user2 fa fa-user"></i>
+        <span>10 min</span>
+        <span class="every1">Every 12 min</span>
+      </div>
+        <br>
+        <hr>
+        <div class="area3">
+    <i class="taxi fa fa-taxi"></i>
+      <div class="time409">4:09 - 5:49 PM</div>
+      <div class="hr1"><span class="bold">1</span>hr <span class="bold">39</span>min</div>
+      <div class="line8">
+      <i class="user fa fa-user"></i>
+      <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="blue">51</span>
+        <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="blue2">540</span>
+        <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="blue2">148</span>
+      </div>
+      <div class="line9">
+        <span>4:22 PM from 계원예술대학교</span>
+      </div>
+      <div class="line10">
+        <i class="user2 fa fa-user"></i>
+        <span>10 min</span>
+        <span class="every1">Every 12 min</span>
+      </div>
+        <br>
+        <hr>
+          <div class="area4">
+    <i class="taxi fa fa-taxi"></i>
+      <div class="time409">4:09 - 5:47 PM</div>
+      <div class="hr1"><span class="bold">1</span>hr <span class="bold">38</span>min</div>
+      <div class="line11">
+      <i class="user fa fa-user"></i>
+      <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="blue">51</span>
+        <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="red2">3030</span>
+        <i class="angle fa fa-angle-right"></i>
+        <i class="fa fa-bus"></i>
+        <span class="blue2">145</span>
+      </div>
+      <div class="line12">
+        <span>4:22 PM from 계원예술대학교</span>
+      </div>
+      <div class="line13">
+        <i class="user2 fa fa-user"></i>
+        <span>11 min</span>
+        <span class="every1">Every 20 min</span>
+      </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
