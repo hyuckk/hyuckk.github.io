@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
   <title>JS Bin</title>
   <style>
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
     header {
       position: fixed;
       left: 0;
@@ -64,11 +68,13 @@
       margin-top: -2.0em;
       margin-right: 1em;
       font-size: 25px;
+      color: #a9c8f8;
     }
     .bar {
       font-size: 25px;
       margin-top: 1em;
       margin-left: 1em;
+      color: #a9c8f8;
     }
     .depart {
       font-size: 20px;
@@ -83,6 +89,7 @@
       margin-top: 17em;
       font-size: 21px;
       margin-left: 1em;
+      color: #666666;
     }
     .time409 {
       font-weight: bold;
@@ -103,7 +110,7 @@
       text-align: center;
     }
     .line2 {
-      margin-left: -29.1em;
+      margin-left: -28.3em;
       margin-top: 1.5em;
       word-spacing: 2em;
       font-size: 18px;
@@ -121,13 +128,13 @@
       font-size: 20px;
       color: gray;
       margin-top: 1em;
-      margin-left: -21em;
+      margin-left: -21.3em;
     }
     .line4 {
       font-size: 20px;
       color: gray;
       margin-top: 1em;
-      margin-left: -21.3em;
+      margin-left: -22.9em;
     }
     .every1 {
       margin-left: 2em;
@@ -151,7 +158,7 @@
       color: white;
     }
     .line5 {
-      margin-left: -22.6em;
+      margin-left: -23em;
       margin-top: 1.5em;
       word-spacing: 2em;
       font-size: 18px;
@@ -160,13 +167,13 @@
       font-size: 20px;
       color: gray;
       margin-top: 1em;
-      margin-left: -21em;
+      margin-left: -21.4em;
     }
     .line7 {
       font-size: 20px;
       color: gray;
       margin-top: 1em;
-      margin-left: -21.3em;
+      margin-left: -23em;
     }
     .area3 {
       margin-top: -21em;
@@ -187,13 +194,13 @@
       color: white;
     }
     .line8 {
-      margin-left: -23.8em;
+      margin-left: -24.2em;
       margin-top: 1.5em;
       word-spacing: 2em;
       font-size: 18px;
     }
     .line11 {
-      margin-left: -24.2em;
+      margin-left: -23.7em;
       margin-top: 1.5em;
       word-spacing: 2em;
       font-size: 18px;
@@ -202,25 +209,25 @@
       font-size: 20px;
       color: gray;
       margin-top: 1em;
-      margin-left: -21em;
+      margin-left: -21.2em;
     }
     .line10 {
       font-size: 20px;
       color: gray;
       margin-top: 1em;
-      margin-left: -21.3em;
+      margin-left: -23em;
     }
     .line12 {
       font-size: 20px;
       color: gray;
       margin-top: 1em;
-      margin-left: -21em;
+      margin-left: -21.2em;
     }
     .line13 {
       font-size: 20px;
       color: gray;
       margin-top: 1em;
-      margin-left: -21.3em;
+      margin-left: -23em;
     }
     @media screen and (max-width: 870px){
       .area1 {
@@ -329,6 +336,9 @@
       .kaywon {
         width: 70%;
       }
+      .icon-color2 {
+        margin-left: -2.8em;
+      }
     }
     @media screen and (max-width:1220px){
       .kaywon {
@@ -340,15 +350,33 @@
         width: 68%;
       }
     }
+    .icon-color1 {
+      color: #a9c8f8;
+    }
+    .icon-color2 {
+      color: #a9c8f8;
+    }
+    .icon-color3 {
+      color: #a9c8f8;
+    }
+    .user {
+      color: #666666;
+    }
+    .bus {
+      color: #666666;
+    }
+    .arrow1 {
+      margin-right: 3em;
+    }
   </style>
   </head>
 <body>
 <header>
   <div class="icon1">
-  <i class="fa fa-arrow-left"></i>
-    <i class="fa fa-bus"></i>
-    <i class="fa fa-taxi"></i>
-    <i class="fa fa-user"></i>
+  <i class="arrow1 fa fa-arrow-left"></i>
+    <i class="icon-color2 fa fa-bus"></i>
+    <i class="taxii fa fa-taxi"></i>
+    <i class="icon-color3 fa fa-user"></i>
   </div>
   <div class="icon2">
     <i class="fa fa-map-marker"></i>
@@ -381,10 +409,10 @@
       <div class="line2">
       <i class="user fa fa-user"></i>
       <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="blue">1-1</span>
         <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="blue">441</span>
       </div>
       <div class="line3">
@@ -404,13 +432,13 @@
       <div class="line5">
       <i class="user fa fa-user"></i>
       <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="blue">1-1</span>
         <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="green">4318</span>
         <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="red">9404</span>
       </div>
       <div class="line6">
@@ -430,13 +458,13 @@
       <div class="line8">
       <i class="user fa fa-user"></i>
       <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="blue">51</span>
         <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="blue2">540</span>
         <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="blue2">148</span>
       </div>
       <div class="line9">
@@ -456,13 +484,13 @@
       <div class="line11">
       <i class="user fa fa-user"></i>
       <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="blue">51</span>
         <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="red2">3030</span>
         <i class="angle fa fa-angle-right"></i>
-        <i class="fa fa-bus"></i>
+        <i class="bus fa fa-bus"></i>
         <span class="blue2">145</span>
       </div>
       <div class="line12">
